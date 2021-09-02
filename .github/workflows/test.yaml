@@ -1,0 +1,11 @@
+name: Test Workflow
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      SECRET: ${{secrets.SECRET}}
+    steps:
+      run: echo "Secret $SECRET"
