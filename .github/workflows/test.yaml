@@ -8,4 +8,4 @@ jobs:
     env:
       SECRET: ${{secrets.SECRET}}
     steps:
-      run: echo "Secret $SECRET"
+      - run: echo "Secret $SECRET"
